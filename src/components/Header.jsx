@@ -23,6 +23,28 @@ const Header = () => {
             Milton Rodrigues
           </span>
         </motion.div>
+        <div className="lg:flex hidden space-x-8">
+          {['Home', 'About', 'Projects', 'Experience', 'Contact'].map(
+            (item, index) => (
+              <a
+                key={item}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 100,
+                  damping: 20,
+                  delay: 0.7 + index * 0.2,
+                }}
+                className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-violet-400 font-medium transition-colors duration-300 group"
+                href="#"
+              >
+                {item}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 transition-all duration-300 group-hover:w-full" />
+              </a>
+            )
+          )}
+        </div>
       </div>
     </header>
   );
