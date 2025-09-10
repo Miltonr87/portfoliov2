@@ -58,33 +58,38 @@ const career = {
       company: 'Close-Up International',
       position: 'Senior',
       duration: '2022-2025',
+      href: 'https://close-upinternational.com/',
     },
     {
       company: 'Loja do Mecânico',
       position: 'Junior / Mid-Level',
       duration: '2021-2022',
+      href: 'https://www.lojadomecanico.com.br/',
     },
     {
       company: 'Freelancer IT',
       position: 'Freelance Web Developer',
-      duration: '2020 - 2021 ',
+      duration: '2020 - 2021',
+      href: 'https://www.freelancer.com/',
     },
   ],
 };
 
 const education = {
   icon: '/assets/resume/cap.svg',
-  title: 'Education',
+  title: 'Educação',
   items: [
     {
-      institution: 'Alura Online Course Platform',
-      degree: 'Frontend Developer',
-      duration: '2020-2021',
+      institution: 'Alura',
+      degree: 'Desenvolvedor Front-End',
+      duration: '2020–2021',
+      href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
     },
     {
       institution: 'Federal University of Alagoas',
-      degree: 'WebJournalism',
-      duration: '2005-2009',
+      degree: 'Journalism',
+      duration: '2005–2009',
+      href: 'https://ufal.br/',
     },
   ],
 };
@@ -160,9 +165,8 @@ const Experience = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
 
-          {/* content  */}
+          {/* career  */}
           <div className="min-h-[1200px] min-w-[800px]  ">
-            {/* experience  */}
             <TabsContent value="career" className="w-full">
               <div
                 className=" flex flex-col gap-[30px] text-center
@@ -176,35 +180,23 @@ const Experience = () => {
                   {career.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul
-                    className=" grid grid-cols-1 lg:grid-cols-2
-                   gap-[30px]"
-                  >
-                    {career.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className=" bg-[#232329] h-[184px] py-8
-                       px-4  rounded-xl flex flex-col justify-center
-                        items-center lg:items-start gap-1"
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {career.items.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          className="bg-[#232329] h-[184px] py-8 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3
-                            className="  
-                         text-center  "
-                          >
-                            {item.position}
-                          </h3>
-                          <div className=" flex items-center gap-3">
-                            <span
-                              className="w-[6px] h-[6px] rounded-full
-                           bg-accent"
-                            ></span>
-                            <p className=" text-white/60">{item.company}</p>
+                          <h3 className="text-center">{item.position}</h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <p className="text-white/60">{item.company}</p>
                           </div>
-                        </li>
-                      );
-                    })}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </ScrollArea>
               </div>
@@ -212,47 +204,32 @@ const Experience = () => {
 
             {/* education  */}
             <TabsContent value="education" className="w-full">
-              <div
-                className=" flex flex-col gap-[30px] text-center
-               xl:text-left"
-              >
-                <h3 className=" text-3xl font-bold">{education.title}</h3>
-                <p
-                  className=" max-w-[600px] text-white/60
-                 mx-auto xl:mx-0"
-                >
-                  {education.description}
-                </p>
-                <ScrollArea className="h-[400px] ">
-                  <ul
-                    className="  grid grid-cols-1 lg:grid-cols-2
-                   gap-[30px]"
-                  >
-                    {education.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className=" bg-[#232329] h-[184px] py-8
-                       px-4  rounded-xl flex flex-col justify-center
-                        items-center lg:items-start gap-1"
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-3xl font-bold">{education.title}</h3>
+                {education.description && (
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {education.description}
+                  </p>
+                )}
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {education.items.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          href={item.href || '#'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#232329] h-[184px] py-8 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3
-                            className="  
-                         text-center  "
-                          >
-                            {item.degree}
-                          </h3>
-                          <div className=" flex items-center gap-3">
-                            <span
-                              className="w-[6px] h-[6px] rounded-full
-                           bg-accent"
-                            ></span>
-                            <p className=" text-white/60">{item.institution}</p>
+                          <h3 className="text-center">{item.degree}</h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <p className="text-white/60">{item.institution}</p>
                           </div>
-                        </li>
-                      );
-                    })}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </ScrollArea>
               </div>

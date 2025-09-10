@@ -9,11 +9,11 @@ const links = [
   },
   {
     name: 'experience',
-    path: '/resume',
+    path: '/experience',
   },
   {
-    name: 'work',
-    path: '/work',
+    name: 'projects',
+    path: '/projects',
   },
 ];
 const Nav = () => {
