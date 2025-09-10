@@ -1,10 +1,13 @@
-import { motion as Motion } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiDownload, FiMenu, FiX } from 'react-icons/fi';
 import { useState } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+  const openContactForm = () => setContactFormOpen(true);
+  const closeContactForm = () => setContactFormOpen(false);
 
   return (
     <header className="absolute w-full z-50 transition-all duration-300">
@@ -86,6 +89,10 @@ const Header = () => {
           </Motion.a>
         </div>
         <Motion.button
+          onClick={() => {
+            openContactForm();
+            toggleMenu();
+          }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -163,13 +170,103 @@ const Header = () => {
             </div>
             <button
               className="w-full px-4 py-2 bg-yellow-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition-colors duration-300"
-              onClick={toggleMenu}
+              onClick={() => {
+                openContactForm();
+                toggleMenu();
+              }}
             >
               Contact Me
             </button>
           </div>
         </Motion.nav>
       )}
+      {/* Contact Form Modal */}
+      <AnimatePresence>
+        {contactFormOpen && (
+          <Motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="fixed inset-0 bg-black/50 background-blur-sm z-50 flex items-center justify-center p-4"
+          >
+            <Motion.div
+              initial={{ scale: 0.8, opacity: 0, y: 30 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 30 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                damping: 30,
+                duration: 0.8,
+              }}
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6"
+            >
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-bold mb-4 text-gray-300">
+                  Contact Me
+                </h2>
+                <button onClick={closeContactForm}>
+                  <FiX className="w-5 h-5 text-gray-300 font-extrabold" />
+                </button>
+              </div>
+              {/* Input Form */}
+              <form className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 bg-gray-700"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 bg-gray-700"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    rows="4"
+                    id="message"
+                    className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 bg-gray-700"
+                    placeholder="Your Message"
+                  />
+                </div>
+                <Motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full px-4 py-2 bg-gradient-to-r from-yellow-600 to-gold-400 hover:from-blue-700 hover:to-blue-600 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg hover:shadow-yellow-600/50"
+                >
+                  Send Message
+                </Motion.button>
+              </form>
+            </Motion.div>
+          </Motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
