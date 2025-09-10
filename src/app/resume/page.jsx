@@ -1,13 +1,21 @@
 'use client';
+
+import { FaHtml5, FaCss3, FaJs, FaNode, FaReact } from 'react-icons/fa';
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaFigma,
-  FaNode,
-  FaReact,
-} from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiRedux,
+  SiJest,
+  SiStorybook,
+  SiMaterialdesign,
+  SiBootstrap,
+  SiSass,
+  SiStyledcomponents,
+  SiSonarqube,
+  SiDocker,
+  SiWebpack,
+} from 'react-icons/si';
 
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -19,9 +27,9 @@ import {
 } from '@/components/ui/tooltip';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const about = {
-  title: 'About me',
+  title: 'Experience',
   description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quis ut nostrum',
+    'My main expertise lies in ReactJS with Javascript and Typescript, creating modern and responsive user interfaces.I have strong knowledge of SSR using Nextjs with Tailwind CSS for design, SPA architectures with Webpack, and Micro-Frontend Architecture, always applying SOLID principles and unit testing to ensure maintainability and quality.',
   info: [
     {
       fieldName: 'Name',
@@ -29,155 +37,103 @@ const about = {
     },
     {
       fieldName: 'Phone',
-      fieldValue: '(+88 017 3145 8068)',
+      fieldValue: '(+55) 82 98112-2732',
     },
     {
       fieldName: 'Experience',
-      fieldValue: '4+ Years',
-    },
-    {
-      fieldName: 'Skype',
-      fieldValue: 'Milton.01',
+      fieldValue: '5+ Years',
     },
     {
       fieldName: 'Nationality',
-      fieldValue: 'Bangladesh',
-    },
-    {
-      fieldName: 'Email',
-      fieldValue: 'mirajhowlader9999@gmail.com',
-    },
-    {
-      fieldName: 'Freelance',
-      fieldValue: 'Available',
-    },
-    {
-      fieldName: 'Language',
-      fieldValue: ' English, Bangla',
+      fieldValue: '🇧🇷 Brazil',
     },
   ],
 };
 
-const experience = {
+const career = {
   icon: '/assets/resume/badge.svg',
-  title: 'My experience',
-  description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam iusto ipsum?',
+  title: 'Career',
   items: [
     {
-      company: 'Tech Solutions Inc.',
-      position: 'Full Stack Developer',
-      duration: '2020-Present ',
+      company: 'Close-Up International',
+      position: 'Senior',
+      duration: '2022-2025',
     },
     {
-      company: 'Web Design Studio.',
-      position: 'Fron-End Developer Intern',
-      duration: 'Summer 2021 ',
+      company: 'Loja do Mecânico',
+      position: 'Junior / Mid-Level',
+      duration: '2021-2022',
     },
     {
-      company: 'E-commerce Startup',
+      company: 'Freelancer IT',
       position: 'Freelance Web Developer',
       duration: '2020 - 2021 ',
-    },
-    {
-      company: 'Tech Academy',
-      position: 'Teaching Assistant',
-      duration: '2020 - 2021 ',
-    },
-    {
-      company: 'Digital Agency',
-      position: 'UI/UX Design',
-      duration: '2018 - 2019 ',
-    },
-    {
-      company: 'Software Developement Firm',
-      position: 'Junior Developer',
-      duration: '2017 - 2018 ',
     },
   ],
 };
 
 const education = {
   icon: '/assets/resume/cap.svg',
-  title: 'My education',
-  description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam iusto ipsum?',
+  title: 'Education',
   items: [
     {
-      institution: 'Online Course Platform',
-      degree: 'Full Stack Development Bootcamp',
-      duration: '2023 ',
+      institution: 'Alura Online Course Platform',
+      degree: 'Frontend Developer',
+      duration: '2020-2021',
     },
     {
-      institution: 'Codecademy',
-      degree: 'Front-end Track',
-      duration: '2022 ',
-    },
-    {
-      institution: 'Online Course',
-      degree: 'Programming Course',
-      duration: '2020 - 2021 ',
-    },
-
-    {
-      institution: 'Tech Institute',
-      degree: 'Certified Web Developer',
-      duration: '2019 ',
-    },
-    {
-      institution: 'Design School',
-      degree: 'Diploma in Graphic Design',
-      duration: '2016 - 2018 ',
-    },
-    {
-      institution: 'Community College',
-      degree: 'Associate Degree in Computer Science',
-      duration: '2014 - 2016 ',
+      institution: 'Federal University of Alagoas',
+      degree: 'WebJournalism',
+      duration: '2005-2009',
     },
   ],
 };
 
 const skills = {
-  title: 'My Skills',
-  description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam iusto ipsum?',
-  skillist: [
+  title: 'Skills',
+  categories: [
     {
-      icon: <FaHtml5 />,
-      name: 'html 5',
+      title: 'Main',
+      skills: [
+        { icon: <FaHtml5 />, name: 'HTML 5' },
+        { icon: <FaCss3 />, name: 'CSS 3' },
+        { icon: <FaJs />, name: 'JavaScript' },
+        { icon: <SiTypescript />, name: 'TypeScript' },
+        { icon: <FaReact />, name: 'React.js' },
+        { icon: <SiRedux />, name: 'Redux' },
+      ],
     },
     {
-      icon: <FaCss3 />,
-      name: 'css 3',
+      title: 'Design',
+      skills: [
+        { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
+        { icon: <SiSass />, name: 'Sass' },
+        { icon: <SiMaterialdesign />, name: 'Material UI' },
+        { icon: <SiStyledcomponents />, name: 'Styled Components' },
+        { icon: <SiBootstrap />, name: 'Bootstrap' },
+      ],
     },
     {
-      icon: <FaJs />,
-      name: 'js',
+      title: 'Testing',
+      skills: [
+        { icon: <SiJest />, name: 'Jest' },
+        { icon: <SiSonarqube />, name: 'SonarQube' },
+      ],
     },
     {
-      icon: <FaNode />,
-      name: 'node js',
-    },
-    {
-      icon: <FaReact />,
-      name: 'react js',
-    },
-    {
-      icon: <FaFigma />,
-      name: 'Figma',
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: 'Next js',
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: 'Tailwind css',
+      title: 'Bundler & Deploy',
+      skills: [
+        { icon: <SiNextdotjs />, name: 'Next.js' },
+        { icon: <SiStorybook />, name: 'Storybook' },
+        { icon: <FaNode />, name: 'Node.js' },
+        { icon: <SiWebpack />, name: 'Webpack' },
+        { icon: <SiDocker />, name: 'Docker' },
+      ],
     },
   ],
 };
 
-const Resume = () => {
+const Experience = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -199,32 +155,32 @@ const Resume = () => {
            max-w-[380px] mx-auto xl:mx-0 gap-6"
           >
             <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="career">Career</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
 
           {/* content  */}
           <div className="min-h-[1200px] min-w-[800px]  ">
             {/* experience  */}
-            <TabsContent value="experience" className="w-full">
+            <TabsContent value="career" className="w-full">
               <div
                 className=" flex flex-col gap-[30px] text-center
                xl:text-left"
               >
-                <h3 className=" text-3xl font-bold">{experience.title}</h3>
+                <h3 className=" text-3xl font-bold">{career.title}</h3>
                 <p
                   className=" max-w-[600px] text-white/60
                  mx-auto xl:mx-0"
                 >
-                  {experience.description}
+                  {career.description}
                 </p>
                 <ScrollArea className="h-[400px]">
                   <ul
                     className=" grid grid-cols-1 lg:grid-cols-2
                    gap-[30px]"
                   >
-                    {experience.items.map((item, index) => {
+                    {career.items.map((item, index) => {
                       return (
                         <li
                           key={index}
@@ -317,43 +273,41 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul
-                  className=" grid grid-cols-2 sm:grid-cols-3
-                 md:grid-cols-4 xl:gap-[20px]"
-                >
-                  {skills.skillist.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider defaultValue={100}>
-                          <Tooltip>
-                            <TooltipTrigger
-                              className=" w-full
-                           h-[150px] bg-[#232329] rounded-xl
-                            flex justify-center items-center
-                             group:"
-                            >
-                              <div
-                                className=" text-6xl
-                             group-hover:text-accent transition-all
-                              duration-200"
-                              >
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className=" capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <div className="flex flex-col gap-[30px]">
+                  {skills.categories.map((category, i) => (
+                    <div key={i}>
+                      <h4 className="text-2xl font-semibold mb-4">
+                        {category.title}
+                      </h4>
+                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[20px]">
+                        {category.skills.map((skill, index) => (
+                          <li key={index}>
+                            <TooltipProvider defaultValue={100}>
+                              <Tooltip>
+                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group">
+                                  <div className="text-6xl group-hover:text-accent transition-all duration-200">
+                                    {skill.icon}
+                                  </div>
+                                  <p className="text-sm text-white/60 mt-2">
+                                    {skill.name}
+                                  </p>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                  <p>{skill.name}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            </TooltipProvider>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
             </TabsContent>
             {/* about  */}
             <TabsContent
-              value="about"
+              value="experience"
               className="w-full
              text-center xl:text-left"
             >
@@ -391,4 +345,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Experience;
