@@ -11,10 +11,6 @@ const links = [
     name: 'experience',
     path: '/experience',
   },
-  {
-    name: 'projects',
-    path: '/projects',
-  },
 ];
 const Nav = () => {
   const pathname = usePathname();

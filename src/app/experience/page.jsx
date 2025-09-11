@@ -17,6 +17,7 @@ import {
   SiWebpack,
 } from 'react-icons/si';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import {
@@ -56,32 +57,42 @@ const career = {
   items: [
     {
       company: 'Close-Up International',
-      position: 'Senior',
+      position: 'Frontend Developer',
       duration: '2022-2025',
       href: 'https://close-upinternational.com/',
+      image: '/assets/work/closeup.png',
     },
     {
       company: 'Loja do Mecânico',
-      position: 'Junior / Mid-Level',
+      position: 'Frontend Developer',
       duration: '2021-2022',
       href: 'https://www.lojadomecanico.com.br/',
+      image: '/assets/work/mecanico.png',
     },
     {
-      company: 'Freelancer IT',
+      company: 'GlobeCoin',
       position: 'Freelance Web Developer',
       duration: '2020 - 2021',
-      href: 'https://www.freelancer.com/',
+      href: 'https://globecoin-miltonr87.vercel.app/',
+      image: '/assets/work/portfolio1.png',
+    },
+    {
+      company: 'CraftBeer House',
+      position: 'Freelance Web Developer',
+      duration: '2020 - 2021',
+      href: 'https://miltonr87.github.io/CraftBeer-House/',
+      image: '/assets/work/craftbeerhouse.png',
     },
   ],
 };
 
 const education = {
   icon: '/assets/resume/cap.svg',
-  title: 'Educação',
+  title: 'Education',
   items: [
     {
-      institution: 'Alura',
-      degree: 'Desenvolvedor Front-End',
+      institution: 'Alura Online Courses',
+      degree: 'Front-End Developer',
       duration: '2020–2021',
       href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
     },
@@ -167,38 +178,50 @@ const Experience = () => {
 
           {/* career  */}
           <div className="min-h-[1200px] min-w-[800px]  ">
+            {/* career */}
             <TabsContent value="career" className="w-full">
-              <div
-                className=" flex flex-col gap-[30px] text-center
-               xl:text-left"
-              >
-                <h3 className=" text-3xl font-bold">{career.title}</h3>
-                <p
-                  className=" max-w-[600px] text-white/60
-                 mx-auto xl:mx-0"
-                >
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-3xl font-bold">{career.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {career.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {career.items.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          className="bg-[#232329] h-[184px] py-8 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-center">{item.position}</h3>
-                          <div className="flex items-center gap-3">
+
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
+                  {career.items.map((item, index) => (
+                    <li key={index}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#232329] rounded-xl overflow-hidden hover:bg-[#2d2d34] transition-colors flex flex-col"
+                      >
+                        {item.image && (
+                          <div className="relative w-full h-[120px]">
+                            <Image
+                              src={item.image}
+                              alt={item.company}
+                              fill
+                              className="object-fill"
+                              sizes="100vw"
+                            />
+                          </div>
+                        )}
+                        <div className="p-4 flex flex-col gap-2 text-center lg:text-left">
+                          <span className="text-accent text-sm">
+                            {item.duration}
+                          </span>
+                          <h3 className="text-lg font-semibold">
+                            {item.position}
+                          </h3>
+                          <div className="flex items-center justify-center lg:justify-start gap-2">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </TabsContent>
 
@@ -237,16 +260,10 @@ const Experience = () => {
 
             {/* skills  */}
             <TabsContent value="skills" className="w-full h-full">
-              <div className=" flex flex-col gap-[30px]">
-                <div
-                  className=" flex flex-col gap-[30px] text-center
-                 xl:text-left"
-                >
-                  <h3 className=" text-3xl font-bold">{skills.title}</h3>
-                  <p
-                    className=" max-w-[600px] text-white/60
-                   mx-auto xl:mx-0"
-                  >
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className="text-3xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -256,16 +273,16 @@ const Experience = () => {
                       <h4 className="text-2xl font-semibold mb-4">
                         {category.title}
                       </h4>
-                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[20px]">
+                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:gap-[15px] gap-[10px]">
                         {category.skills.map((skill, index) => (
                           <li key={index}>
-                            <TooltipProvider defaultValue={100}>
+                            <TooltipProvider>
                               <Tooltip>
-                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group">
-                                  <div className="text-6xl group-hover:text-accent transition-all duration-200">
+                                <TooltipTrigger className="w-full h-[110px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group">
+                                  <div className="text-4xl group-hover:text-accent transition-all duration-200">
                                     {skill.icon}
                                   </div>
-                                  <p className="text-sm text-white/60 mt-2">
+                                  <p className="text-xs text-white/60 mt-2">
                                     {skill.name}
                                   </p>
                                 </TooltipTrigger>
