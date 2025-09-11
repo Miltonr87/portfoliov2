@@ -16,8 +16,8 @@ export default function Home() {
           <div className=" text-center xl:text-left order-2 xl:order-none">
             <span className=" text-xl">Frontend Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br />{' '}
-              <span className=" text-accent">Milton Rodrigues</span>
+              Hello I&apos;m
+              <br /> <span className=" text-accent">Milton Rodrigues</span>
             </h1>
             <p className=" max-w-[500px] text-white/80 mb-4">
               Self-driven software engineer with 5 years of experience,
