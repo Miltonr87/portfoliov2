@@ -56,6 +56,13 @@ const career = {
   title: 'Career',
   items: [
     {
+      company: '7Things Network',
+      position: 'Software Engineer',
+      duration: '2025',
+      href: 'https://7things.com.br/',
+      image: '/assets/work/7things.png',
+    },
+    {
       company: 'Close-Up International',
       position: 'Frontend Developer',
       duration: '2022-2025',
@@ -75,13 +82,6 @@ const career = {
       duration: '2020 - 2021',
       href: 'https://globecoin-miltonr87.vercel.app/',
       image: '/assets/work/portfolio1.png',
-    },
-    {
-      company: 'CraftBeer House',
-      position: 'Freelance Web Developer',
-      duration: '2020 - 2021',
-      href: 'https://miltonr87.github.io/CraftBeer-House/',
-      image: '/assets/work/craftbeerhouse.png',
     },
   ],
 };
