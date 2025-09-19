@@ -92,7 +92,7 @@ const education = {
   items: [
     {
       institution: 'Alura Online Courses',
-      degree: 'Front-End Developer',
+      degree: 'Software Engineer',
       duration: '2020–2021',
       href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
     },
