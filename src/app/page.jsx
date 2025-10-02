@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none max-w-xl">
-            <span className="text-lg sm:text-xl">Frontend Developer</span>
+            <span className="text-lg sm:text-xl">Software Engineer</span>
             <h1 className="h1 mb-6">
               Hello, I&apos;m
               <br />
@@ -20,7 +20,7 @@ export default function Home() {
             <p className="max-w-[500px] text-white/80 mb-6 text-sm sm:text-base">
               Self-driven software engineer with 5 years of experience,
               specializing in the creation of scalable and high-performance web
-              applications.
+              applications as a frontend especialist.
             </p>
 
             {/* btn and social icons */}
