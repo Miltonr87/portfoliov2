@@ -1,0 +1,17 @@
+html,
+body {
+  overflow-x: hidden;
+} /* kills horizontal scroll on small screens */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+} /* fluid media on mobile */
+
+@media (max-width: 768px) {
+  .tap-lg {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  } /* bigger tap targets */
+}
