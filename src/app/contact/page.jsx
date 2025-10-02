@@ -12,7 +12,7 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 0.4, duration: 0.6, ease: 'easeInOut' },
       }}
-      className="pt-24 pb-12 px-4 flex justify-center"
+      className="pt-8 pb-12 px-4 flex justify-center"
     >
       <div className="w-full max-w-2xl">
         <form
@@ -24,8 +24,8 @@ const Contact = () => {
             Contact
           </h3>
           <p className="text-white/70 text-justify text-sm sm:text-base leading-relaxed">
-            I am available for an interview. Please feel free to contact me
-            using a valid email, and I will respond as soon as possible.
+            Let’s connect! If you have a project, collaboration, or just want to
+            chat, send me a message by email and I’ll reply as soon as possible.
           </p>
 
           {/* inputs */}
@@ -50,7 +50,7 @@ const Contact = () => {
           <Textarea
             className="h-40 rounded-xl px-4 py-2"
             name="message"
-            placeholder=" Enter your message..."
+            placeholder="Enter your message..."
             required
           />
 
