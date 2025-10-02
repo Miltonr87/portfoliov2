@@ -27,16 +27,27 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
 const about = {
   title: 'Experience',
   description:
-    'My main expertise lies in ReactJS with Javascript and Typescript, creating modern and responsive user interfaces. I have strong knowledge of SSR using Nextjs with Tailwind CSS for design, SPA architectures with Webpack, and Micro-Frontend Architecture, always applying SOLID principles and unit testing to ensure maintainability and quality.',
+    'My main expertise lies in ReactJS with Javascript and Typescript, creating modern and responsive user interfaces.I have strong knowledge of SSR using Nextjs with Tailwind CSS for design, SPA architectures with Webpack, and Micro-Frontend Architecture, always applying SOLID principles and unit testing to ensure maintainability and quality.',
   info: [
-    { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
-    { fieldName: 'Phone', fieldValue: '(+55) 82 98112-2732' },
-    { fieldName: 'Experience', fieldValue: '5+ Years' },
-    { fieldName: 'Nationality', fieldValue: '🇧🇷 Brazil' },
+    {
+      fieldName: 'Name',
+      fieldValue: 'Milton Rodrigues',
+    },
+    {
+      fieldName: 'Phone',
+      fieldValue: '(+55) 82 98112-2732',
+    },
+    {
+      fieldName: 'Experience',
+      fieldValue: '5+ Years',
+    },
+    {
+      fieldName: 'Nationality',
+      fieldValue: '🇧🇷 Brazil',
+    },
   ],
 };
 
@@ -84,14 +95,12 @@ const education = {
       degree: 'Software Engineer',
       duration: '2020–2021',
       href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
-      image: '/assets/work/alura.png',
     },
     {
       institution: 'Federal University of Alagoas',
       degree: 'Journalism',
       duration: '2005–2009',
       href: 'https://ufal.br/',
-      image: '/assets/work/ufal.jpeg',
     },
   ],
 };
@@ -148,14 +157,19 @@ const Experience = () => {
         opacity: 1,
         transition: { delay: 2.2, duration: 0.4, ease: 'easeIn' },
       }}
-      className="min-h-[70vh] flex items-center justify-center py-12 xl:py-0"
+      className=" min-h-[70vh] flex items-center justify-center
+     py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]"
+          className="flex flex-col
+         xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+          <TabsList
+            className="flex flex-col w-full
+           max-w-[380px] mx-auto xl:mx-0 gap-6"
+          >
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="career">Career</TabsTrigger>
@@ -163,10 +177,15 @@ const Experience = () => {
           </TabsList>
 
           {/* career  */}
-          <div className="min-h-[1200px] min-w-[800px]">
+          <div className="min-h-[1200px] min-w-[800px]  ">
+            {/* career */}
             <TabsContent value="career" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-3xl font-bold">{career.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {career.description}
+                </p>
+
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
                   {career.items.map((item, index) => (
                     <li key={index}>
@@ -206,10 +225,15 @@ const Experience = () => {
               </div>
             </TabsContent>
 
-            {/* education */}
+            {/* education  */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-3xl font-bold">{education.title}</h3>
+                {education.description && (
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {education.description}
+                  </p>
+                )}
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => (
@@ -218,24 +242,8 @@ const Experience = () => {
                           href={item.href || '#'}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#232329] h-[220px] py-6 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-3 hover:bg-[#2d2d34] transition-colors"
+                          className="bg-[#232329] h-[184px] py-8 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
                         >
-                          {/* Institution Logo with animation */}
-                          {item.image && (
-                            <motion.div
-                              whileHover={{ scale: 1.1 }}
-                              transition={{ type: 'spring', stiffness: 300 }}
-                              className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-accent"
-                            >
-                              <Image
-                                src={item.image}
-                                alt={item.institution}
-                                fill
-                                className="object-cover"
-                              />
-                            </motion.div>
-                          )}
-
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-center">{item.degree}</h3>
                           <div className="flex items-center gap-3">
@@ -250,11 +258,14 @@ const Experience = () => {
               </div>
             </TabsContent>
 
-            {/* skills */}
+            {/* skills  */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-3xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {skills.description}
+                  </p>
                 </div>
                 <div className="flex flex-col gap-[30px]">
                   {skills.categories.map((category, i) => (
@@ -288,27 +299,36 @@ const Experience = () => {
                 </div>
               </div>
             </TabsContent>
-
-            {/* about */}
+            {/* about  */}
             <TabsContent
               value="experience"
-              className="w-full text-center xl:text-left"
+              className="w-full
+             text-center xl:text-left"
             >
-              <div className="flex flex-col gap-[30px]">
+              <div className=" flex flex-col gap-[30px]">
                 <h3 className="text-3xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p
+                  className=" max-w-[600px] text-white/60
+                 mx-auto xl:mx-0"
+                >
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-h-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center justify-center xl:justify-start gap-4"
-                    >
-                      <span className="text-white/60">{item.fieldName}</span>
-                      <span className="text-xl">{item.fieldValue}</span>
-                    </li>
-                  ))}
+                <ul
+                  className=" grid grid-cols-1 xl:grid-cols-2
+                 gap-h-6 max-w-[620px] mx-auto xl:mx-0"
+                >
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className=" flex items-center justify-center
+                     xl:justify-start gap-4"
+                      >
+                        <span className=" text-white/60">{item.fieldName}</span>
+                        <span className=" text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </TabsContent>
