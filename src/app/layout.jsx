@@ -12,7 +12,7 @@ const jetBrains_Mono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'Milton Rodrigues - Portfólio',
+  title: 'Milton Rodrigues - Portfolio',
   description: 'Software Engineer specialized in Frontend applications',
 };
 
