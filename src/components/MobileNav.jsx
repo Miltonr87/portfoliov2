@@ -22,7 +22,7 @@ const MobileNav = () => {
       {/* mobile drawer */}
       <SheetContent
         side="right"
-        className="flex flex-col w-[75%] sm:max-w-sm p-8 bg-gradient-to-b from-[#1a1a1f] to-[#0f0f12] text-white shadow-xl"
+        className="flex flex-col w-[70%] sm:max-w-sm p-8 bg-gradient-to-b from-[#1a1a1f] to-[#0f0f12] text-white shadow-xl"
       >
         {/* logo */}
         <div className="mt-8 mb-12 text-center">
