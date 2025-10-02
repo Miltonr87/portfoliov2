@@ -18,9 +18,9 @@ export default function Home() {
               <span className="text-accent">Milton Rodrigues</span>
             </h1>
             <p className="max-w-[500px] text-white/80 mb-6 text-sm sm:text-base">
-              Self-driven software engineer with 5 years of experience,
-              specializing in the creation of scalable and high-performance web
-              applications as a frontend especialist.
+              Self-driven software engineer with 5 years of experience in
+              Frontend Development, specializing in the creation of scalable and
+              high-performance web applications and SaaS platforms.
             </p>
 
             {/* btn and social icons */}
