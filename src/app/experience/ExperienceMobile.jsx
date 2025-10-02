@@ -148,7 +148,6 @@ const Experience = () => {
     >
       <div className="container mx-auto px-4 md:px-6 xl:px-0 w-full">
         <Tabs defaultValue="about" className="w-full">
-          {/* HORIZONTAL NAVBAR (scrollable on mobile) */}
           <TabsList className="w-full flex items-center justify-between gap-2 sm:gap-4 overflow-x-auto rounded-none bg-transparent p-0 border-b border-white/10">
             <TabsTrigger
               value="about"
@@ -176,7 +175,6 @@ const Experience = () => {
             </TabsTrigger>
           </TabsList>
           <div className="pt-6">
-            {/* ABOUT */}
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"
@@ -203,7 +201,6 @@ const Experience = () => {
                 </ul>
               </div>
             </TabsContent>
-            {/* SKILLS */}
             <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-6">
                 <div className="text-center xl:text-left">
@@ -243,7 +240,6 @@ const Experience = () => {
                 </div>
               </div>
             </TabsContent>
-            {/* CAREER */}
             <TabsContent value="career" className="w-full">
               <div className="flex flex-col gap-6 text-center xl:text-left">
                 <h3 className="text-2xl sm:text-3xl font-bold">
@@ -287,7 +283,6 @@ const Experience = () => {
                 </ul>
               </div>
             </TabsContent>
-            {/* EDUCATION */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-6 text-center xl:text-left">
                 <h3 className="text-2xl sm:text-3xl font-bold">
