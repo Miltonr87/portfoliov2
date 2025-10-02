@@ -5,9 +5,10 @@ import Link from 'next/link';
 import { CiMenuFries } from 'react-icons/ci';
 
 const links = [
-  { name: 'home', path: '/' },
-  { name: 'experience', path: '/experience' },
-  { name: 'contact', path: '/contact' },
+  { name: 'Home', path: '/' },
+  { name: 'Experience', path: '/experience' },
+  { name: 'Contact', path: '/contact' },
+  { name: 'AI Band', path: 'https://manifest-404.vercel.app/' },
 ];
 
 const MobileNav = () => {

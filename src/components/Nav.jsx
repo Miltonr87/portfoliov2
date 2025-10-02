@@ -11,6 +11,8 @@ const links = [
     name: 'experience',
     path: '/experience',
   },
+
+  { name: 'AI Band', path: 'https://manifest-404.vercel.app/' },
 ];
 const Nav = () => {
   const pathname = usePathname();
