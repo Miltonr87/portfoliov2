@@ -8,8 +8,11 @@ import {
   SiRedux,
   SiJest,
   SiStorybook,
+  SiLucid,
+  SiRadixui,
+  SiFramer,
+  SiVite,
   SiMaterialdesign,
-  SiBootstrap,
   SiSass,
   SiStyledcomponents,
   SiSonarqube,
@@ -123,10 +126,12 @@ const skills = {
       title: 'Design',
       skills: [
         { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
-        { icon: <SiSass />, name: 'Sass' },
+        { icon: <SiLucid />, name: 'Lucide React' },
+        { icon: <SiRadixui />, name: 'Radix UI' },
+        { icon: <SiFramer />, name: 'Framer Motion' },
         { icon: <SiMaterialdesign />, name: 'Material UI' },
+        { icon: <SiSass />, name: 'Sass' },
         { icon: <SiStyledcomponents />, name: 'Styled Components' },
-        { icon: <SiBootstrap />, name: 'Bootstrap' },
       ],
     },
     {
@@ -137,10 +142,11 @@ const skills = {
       ],
     },
     {
+      //SiVite
       title: 'Bundler & Deploy',
       skills: [
         { icon: <SiNextdotjs />, name: 'Next.js' },
-        { icon: <SiStorybook />, name: 'Storybook' },
+        { icon: <SiVite />, name: 'Vite' },
         { icon: <FaNode />, name: 'Node.js' },
         { icon: <SiWebpack />, name: 'Webpack' },
         { icon: <SiDocker />, name: 'Docker' },
@@ -176,7 +182,6 @@ const Experience = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
 
-          {/* career  */}
           <div className="min-h-[1200px] min-w-[800px]  ">
             {/* career */}
             <TabsContent value="career" className="w-full">

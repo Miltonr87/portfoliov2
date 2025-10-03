@@ -8,33 +8,27 @@ const links = [
   { name: 'Home', path: '/' },
   { name: 'Experience', path: '/experience' },
   { name: 'Contact', path: '/contact' },
-  { name: 'AI Band', path: 'https://manifest-404.vercel.app/' },
+  { name: 'Manifest 404', path: 'https://manifest-404.vercel.app/' },
 ];
 
 const MobileNav = () => {
   const pathname = usePathname();
   return (
     <Sheet>
-      {/* burger button */}
       <SheetTrigger className="flex justify-center items-center p-2 rounded-md hover:bg-white/10 transition">
         <CiMenuFries className="text-3xl sm:text-[32px] text-accent" />
       </SheetTrigger>
-
-      {/* mobile drawer */}
       <SheetContent
         side="right"
         className="flex flex-col w-[70%] sm:max-w-sm p-8 bg-gradient-to-b from-[#1a1a1f] to-[#0f0f12] text-white shadow-xl"
       >
-        {/* logo */}
         <div className="mt-8 mb-12 text-center">
           <Link href="/">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-wide">
-              Milton<span className="text-accent">.</span>
+              Miltøn<span className="text-accent">.</span>
             </h1>
           </Link>
         </div>
-
-        {/* nav links */}
         <nav className="flex flex-col items-center gap-6">
           {links.map((link, index) => {
             const isActive = pathname === link.path;
@@ -54,8 +48,6 @@ const MobileNav = () => {
             );
           })}
         </nav>
-
-        {/* footer */}
         <div className="mt-auto pt-10 text-center text-sm text-white/50 border-t border-white/10">
           <p>© {new Date().getFullYear()} Milton Rodrigues</p>
         </div>

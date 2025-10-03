@@ -13,16 +13,12 @@ const Header = () => {
             Miltøn<span className="text-accent">.</span>
           </h1>
         </Link>
-
-        {/* desktop nav */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
             <Button>Contact</Button>
           </Link>
         </div>
-
-        {/* mobile nav */}
         <div className="xl:hidden">
           <MobileNav />
         </div>
