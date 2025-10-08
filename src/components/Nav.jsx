@@ -11,8 +11,7 @@ const links = [
     name: 'experience',
     path: '/experience',
   },
-
-  { name: 'Manifest 404', path: 'https://manifest-404.vercel.app/' },
+  // { name: 'Manifest 404', path: 'https://manifest-404.vercel.app/' },
 ];
 const Nav = () => {
   const pathname = usePathname();
