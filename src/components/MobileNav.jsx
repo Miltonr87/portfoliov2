@@ -7,8 +7,8 @@ import { CiMenuFries } from 'react-icons/ci';
 const links = [
   { name: 'Home', path: '/' },
   { name: 'Experience', path: '/experience' },
+  { name: 'Side Projects', path: '/sideprojects' },
   { name: 'Contact', path: '/contact' },
-  // { name: 'Manifest 404', path: 'https://manifest-404.vercel.app/' },
 ];
 
 const MobileNav = () => {

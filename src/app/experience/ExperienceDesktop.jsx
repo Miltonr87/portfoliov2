@@ -7,7 +7,6 @@ import {
   SiTypescript,
   SiRedux,
   SiJest,
-  SiStorybook,
   SiLucid,
   SiRadixui,
   SiFramer,
