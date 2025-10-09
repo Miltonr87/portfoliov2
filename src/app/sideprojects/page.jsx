@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Bit Legends',
     description:
-      'A nostalgic retro-gaming hub powered by EmulatorJS, where players can relive 16-bit classics like Streets of Rage, log in to save their favorites, and play directly in the browser.',
+      'A nostalgic retro-gaming hub powered by EmulatorJS, where players can relive 16-bit classics like Streets of Rage, log in to save their favorites, and play directly in the browser with keyboard or joystick.',
     tech: [
       'React',
       'Typescript',
@@ -31,6 +31,7 @@ const projects = [
       'Framer Motion',
       'OAuth',
       'EmulatorJS',
+      'Firebase',
     ],
     link: 'https://bitlegends.vercel.app/',
     image: '/assets/projects/bitlegends.png',
