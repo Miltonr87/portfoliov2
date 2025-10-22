@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Bit Legends',
     description:
-      'A nostalgic retro-gaming hub powered by EmulatorJS, where players can relive 16-bit classics like Streets of Rage, log in to save their favorites, and play directly in the browser with keyboard or joystick.',
+      'A nostalgic retro-gaming hub powered by EmulatorJS, where players can relive 16-bit fighting classics, log in with Google to save favorites games. Play directly in the browser with keyboard or joystick.',
     tech: [
       'React',
       'Typescript',
@@ -35,6 +35,14 @@ const projects = [
     ],
     link: 'https://bitlegends.vercel.app/',
     image: '/assets/projects/bitlegends.png',
+  },
+  {
+    title: 'Dark Walker (Theme)',
+    description:
+      'A refined dark theme for VSCode inspired by the elegance of a famous scotch whisky. Designed for developers who appreciate balance, contrast and aesthetic with accessibility.',
+    tech: ['VSCode', 'CSS', 'Design', 'Accessibility'],
+    link: 'https://marketplace.visualstudio.com/items?itemName=Miltonr87.dark-walker',
+    image: '/assets/projects/dark_walker.png',
   },
 ];
 
@@ -59,7 +67,12 @@ const SideProjects = () => {
             technologies — from my AI punk band{' '}
             <span className="font-semibold text-accent">Manifest 404</span> to
             my retro gaming platform{' '}
-            <span className="font-semibold text-accent">Bit Legends</span>.
+            <span className="font-semibold text-accent">Bit Legends</span> and
+            even my own{' '}
+            <span className="font-semibold text-accent">
+              Dark Walker VSCode theme
+            </span>
+            .
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -79,17 +92,18 @@ const SideProjects = () => {
                 />
               </div>
               <div className="p-6 flex flex-col gap-4">
-                <h4 className="text-2xl font-semibold text-white flex items-center gap-2">
-                  {project.title}
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent hover:text-accent/70 transition-colors"
-                  >
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-accent/70 transition-colors"
+                >
+                  <h4 className="text-2xl font-semibold text-white flex items-center gap-2">
+                    {project.title}
+
                     <ExternalLink className="w-4 h-4" />
-                  </a>
-                </h4>
+                  </h4>
+                </a>
                 <p className="text-white/70 text-sm leading-relaxed">
                   {project.description}
                 </p>
