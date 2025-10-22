@@ -100,7 +100,6 @@ const SideProjects = () => {
                 >
                   <h4 className="text-2xl font-semibold text-white flex items-center gap-2">
                     {project.title}
-
                     <ExternalLink className="w-4 h-4" />
                   </h4>
                 </a>
