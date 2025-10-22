@@ -75,13 +75,17 @@ const SideProjects = () => {
             .
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
           {projects.map((project, i) => (
             <motion.div
               key={i}
               whileHover={{ scale: 1.03 }}
               transition={{ type: 'spring', stiffness: 200 }}
-              className="bg-[#232329] rounded-2xl overflow-hidden shadow-lg hover:shadow-accent/30 transition-all duration-300"
+              className={`bg-[#232329] rounded-2xl overflow-hidden shadow-lg hover:shadow-accent/30 transition-all duration-300 ${
+                i === projects.length - 1
+                  ? 'md:col-span-2 md:max-w-md md:mx-auto'
+                  : ''
+              }`}
             >
               <div className="relative w-full h-[220px] md:h-[320px] md:flex md:items-center md:justify-center">
                 <Image
