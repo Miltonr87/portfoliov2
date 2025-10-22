@@ -83,12 +83,13 @@ const SideProjects = () => {
               transition={{ type: 'spring', stiffness: 200 }}
               className="bg-[#232329] rounded-2xl overflow-hidden shadow-lg hover:shadow-accent/30 transition-all duration-300"
             >
-              <div className="relative w-full h-[220px]">
+              <div className="relative w-full h-[220px] md:h-[320px] md:flex md:items-center md:justify-center">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-contain md:object-cover md:rounded-t-2xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6 flex flex-col gap-4">
