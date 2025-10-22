@@ -61,8 +61,8 @@ const SideProjects = () => {
           Side Projects
         </h3>
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          When I'm not coding for clients, I dive into passion projects where I
-          explore creativity — from my AI punk band called{' '}
+          When I&apos;m not coding for clients, I dive into passion projects
+          where I explore creativity — from my AI punk band called{' '}
           <span className="font-semibold text-accent">Manifest 404</span>, to my
           retro gaming platform{' '}
           <span className="font-semibold text-accent">Bit Legends</span>, and
