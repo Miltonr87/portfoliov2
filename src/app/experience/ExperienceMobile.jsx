@@ -33,7 +33,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const about = {
   title: 'Experience',
   description:
-    'My main expertise lies in ReactJS with Javascript and Typescript, creating modern and responsive user interfaces. I have strong knowledge of SSR using Nextjs with Tailwind CSS for design, SPA architectures with Webpack, and Micro-Frontend Architecture, always applying SOLID principles and unit testing to ensure maintainability and quality.',
+    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js and Tailwind CSS, as well as SPA architectures with Webpack and Micro-Frontend design. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
   info: [
     { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
     { fieldName: 'Phone', fieldValue: '(+55) 82 98112-2732' },

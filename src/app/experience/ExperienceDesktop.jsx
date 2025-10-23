@@ -32,7 +32,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const about = {
   title: 'Experience',
   description:
-    'My main expertise lies in ReactJS with Javascript and Typescript, creating modern and responsive user interfaces.I have strong knowledge of SSR using Nextjs with Tailwind CSS for design, SPA architectures with Webpack, and Micro-Frontend Architecture, always applying SOLID principles and unit testing to ensure maintainability and quality.',
+    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js and Tailwind CSS, as well as SPA architectures with Webpack and Micro-Frontend design. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
   info: [
     {
       fieldName: 'Name',
@@ -141,7 +141,6 @@ const skills = {
       ],
     },
     {
-      //SiVite
       title: 'Bundler & Deploy',
       skills: [
         { icon: <SiNextdotjs />, name: 'Next.js' },
@@ -180,9 +179,7 @@ const Experience = () => {
             <TabsTrigger value="career">Career</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
-
           <div className="min-h-[1200px] min-w-[800px]  ">
-            {/* career */}
             <TabsContent value="career" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-3xl font-bold">{career.title}</h3>
@@ -228,8 +225,6 @@ const Experience = () => {
                 </ul>
               </div>
             </TabsContent>
-
-            {/* education  */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-3xl font-bold">{education.title}</h3>
@@ -261,8 +256,6 @@ const Experience = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
-
-            {/* skills  */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -303,7 +296,6 @@ const Experience = () => {
                 </div>
               </div>
             </TabsContent>
-            {/* about  */}
             <TabsContent
               value="experience"
               className="w-full
