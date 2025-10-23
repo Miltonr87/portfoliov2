@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'Dark Walker',
     description:
-      'A refined dark theme for VSCode inspired by the elegance of a famous scotch whisky. Designed for developers who appreciate balance, contrast and aesthetic with accessibility.',
+      'A refined dark theme for VSCode inspired by the elegance of a famous scotch whisky. Designed for developers who appreciate balance, contrast and accessibility.',
     tech: ['VSCode', 'CSS', 'UI Design', 'Accessibility', 'Colorblind', 'Dark'],
     link: 'https://marketplace.visualstudio.com/items?itemName=Miltonr87.dark-walker',
     image: '/assets/projects/dark_walker.png',

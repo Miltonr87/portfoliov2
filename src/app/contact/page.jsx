@@ -27,8 +27,6 @@ const Contact = () => {
             Let’s connect! If you have a project, collaboration, or just want to
             chat, send me a message by email and I’ll reply as soon as possible.
           </p>
-
-          {/* inputs */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Input
               type="text"
@@ -45,16 +43,12 @@ const Contact = () => {
               className="h-12 rounded-xl"
             />
           </div>
-
-          {/* textarea */}
           <Textarea
             className="h-40 rounded-xl px-4 py-2"
             name="message"
             placeholder="Enter your message..."
             required
           />
-
-          {/* button */}
           <div className="flex justify-center">
             <Button
               size="lg"
