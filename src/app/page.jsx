@@ -9,7 +9,6 @@ export default function Home() {
     <section>
       <div className="container mx-auto h-full px-4 md:px-6 xl:px-0">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none max-w-xl">
             <span className="text-lg sm:text-xl">Software Engineer</span>
             <h1 className="h1 mb-6">

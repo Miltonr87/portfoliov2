@@ -98,7 +98,9 @@ const SideProjects = () => {
                     }}
                   />
                 )}
-                <span className="relative z-20">{p.title}</span>
+                <span className="relative z-20">
+                  <strong className="font-bold">{p.title}</strong>
+                </span>
               </motion.button>
             );
           })}
@@ -133,6 +135,7 @@ const SideProjects = () => {
                 fill
                 className="object-cover md:rounded-t-2xl"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
             </div>
             <div className="p-5 flex flex-col gap-3 text-left">

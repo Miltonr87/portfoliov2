@@ -18,7 +18,6 @@ import {
   SiDocker,
   SiWebpack,
 } from 'react-icons/si';
-
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
