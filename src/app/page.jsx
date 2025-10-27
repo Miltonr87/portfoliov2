@@ -17,10 +17,11 @@ export default function Home() {
               <span className="text-accent">Milton Rodrigues</span>
             </h1>
             <p className="max-w-[500px] text-white/80 mb-6 text-sm sm:text-base">
-              Self-driven Frontend Engineer with 5 years of experience building
-              scalable, high-performance web applications and SaaS platforms.
-              Passionate about crafting clean, efficient code and delivering
-              user-focused solutions.
+              Self-driven Frontend Engineer with 5 years of experience
+              developing scalable web applications and SaaS platforms. Focused
+              on crafting efficient, maintainable code and creating delivering
+              solutions that combine performance, usability and design
+              excellence.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
               <a href="https://resume.io/r/LIdaD2cGI" target="_blank">
