@@ -9,7 +9,7 @@ const projects = [
     title: 'Manifest 404',
     description:
       'A digital AI-powered punk rock band blending cyberpunk aesthetics with distorted guitars and the spirit of futuristic rebellion. I handle the design, code and music direction.',
-    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'AI Music'],
+    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Supabase'],
     link: 'https://manifest-404.vercel.app/',
     image: '/assets/projects/manifest404.png',
   },
