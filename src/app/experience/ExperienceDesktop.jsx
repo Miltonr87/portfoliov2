@@ -31,7 +31,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const about = {
   title: 'Experience',
   description:
-    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js and Tailwind CSS, as well as SPA architectures with Webpack and Micro-Frontend design. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
+    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js, as well as Client-Side Rendering (CSR) architectures. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
   info: [
     {
       fieldName: 'Name',
