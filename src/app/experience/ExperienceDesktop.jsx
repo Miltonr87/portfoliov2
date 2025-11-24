@@ -38,8 +38,8 @@ const about = {
       fieldValue: 'Milton Rodrigues',
     },
     {
-      fieldName: 'Phone',
-      fieldValue: '(+55) 82 98112-2732',
+      fieldName: 'Developer',
+      fieldValue: 'Frontend',
     },
     {
       fieldName: 'Experience',

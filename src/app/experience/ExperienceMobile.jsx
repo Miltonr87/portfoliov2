@@ -35,7 +35,7 @@ const about = {
     'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js, as well as Client-Side Rendering (CSR) architectures. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
   info: [
     { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
-    { fieldName: 'Phone', fieldValue: '(+55) 82 98112-2732' },
+    { fieldName: 'Developer', fieldValue: 'Frontend' },
     { fieldName: 'Experience', fieldValue: '5+ Years' },
     { fieldName: 'Nationality', fieldValue: '🇧🇷 Brazil' },
   ],
