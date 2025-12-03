@@ -1,43 +1,28 @@
 'use client';
 
-import { FaHtml5, FaCss3, FaJs, FaNode, FaReact } from 'react-icons/fa';
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiTypescript,
-  SiRedux,
-  SiJest,
-  SiVite,
-  SiMaterialdesign,
-  SiLucid,
-  SiRadixui,
-  SiFramer,
-  SiSass,
-  SiStyledcomponents,
-  SiSonarqube,
-  SiDocker,
-  SiWebpack,
-} from 'react-icons/si';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+  FaTrello,
+  FaUsers,
+  FaChartLine,
+  FaClipboardList,
+  FaTasks,
+} from 'react-icons/fa';
+import { SiGrapheneos } from 'react-icons/si';
+import { GiCycle } from 'react-icons/gi';
 
 const about = {
   title: 'Experience',
   description:
-    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js, as well as Client-Side Rendering (CSR) architectures. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
+    'With over 5 years in the tech industry, my journey began with a drive to improve how product and development teams collaborate. As a former software developer, I discovered that the biggest challenges were often organizational, not technical. That insight led me to move into Product Management and Ownership, bridging vision and execution to deliver measurable business value.',
   info: [
     { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
-    { fieldName: 'Developer', fieldValue: 'Frontend' },
-    { fieldName: 'Experience', fieldValue: '5+ Years' },
     { fieldName: 'Nationality', fieldValue: '🇧🇷 Brazil' },
+    { fieldName: 'Role', fieldValue: 'Product Management' },
+    { fieldName: 'Tech Industries', fieldValue: '5+ Years' },
   ],
 };
 
@@ -54,21 +39,21 @@ const career = {
     {
       company: 'Close-Up International',
       position: 'Frontend Developer',
-      duration: '2022-2025',
+      duration: '2022–2025',
       href: 'https://close-upinternational.com/',
       image: '/assets/work/closeup.png',
     },
     {
       company: 'Loja do Mecânico',
       position: 'Frontend Developer',
-      duration: '2021-2022',
+      duration: '2021–2022',
       href: 'https://www.lojadomecanico.com.br/',
       image: '/assets/work/mecanico.png',
     },
     {
       company: 'GlobeCoin',
       position: 'Freelance Web Developer',
-      duration: '2020 - 2021',
+      duration: '2020–2021',
       href: 'https://globecoin-miltonr87.vercel.app/',
       image: '/assets/work/portfolio1.png',
     },
@@ -78,6 +63,12 @@ const career = {
 const education = {
   title: 'Education',
   items: [
+    {
+      institution: 'Alura Online Courses',
+      degree: 'Product Manager',
+      duration: '2025',
+      href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
+    },
     {
       institution: 'Alura Online Courses',
       degree: 'Software Engineer',
@@ -97,49 +88,26 @@ const skills = {
   title: 'Skills',
   categories: [
     {
-      title: 'Main',
+      title: 'Product Management & Ownership',
       skills: [
-        { icon: <FaHtml5 />, name: 'HTML 5' },
-        { icon: <FaCss3 />, name: 'CSS 3' },
-        { icon: <FaJs />, name: 'JavaScript' },
-        { icon: <SiTypescript />, name: 'TypeScript' },
-        { icon: <FaReact />, name: 'React.js' },
-        { icon: <SiRedux />, name: 'Redux' },
+        { icon: <FaTrello />, name: 'Agile & Scrum Methodologies' },
+        { icon: <FaChartLine />, name: 'Product Strategy & Roadmapping' },
+        { icon: <FaClipboardList />, name: 'Backlog Prioritization' },
+        { icon: <FaUsers />, name: 'Stakeholder Communication' },
+        { icon: <FaTasks />, name: 'User Story Mapping' },
+        { icon: <SiGrapheneos />, name: 'Data-Driven Decisions' },
       ],
+      center: { icon: <GiCycle />, name: 'Cross-Functional Leadership' },
     },
     {
-      title: 'Design',
-      skills: [
-        { icon: <SiTailwindcss />, name: 'Tailwind CSS' },
-        { icon: <SiLucid />, name: 'Lucide React' },
-        { icon: <SiRadixui />, name: 'Radix UI' },
-        { icon: <SiFramer />, name: 'Framer Motion' },
-        { icon: <SiMaterialdesign />, name: 'Material UI' },
-        { icon: <SiSass />, name: 'Sass' },
-        { icon: <SiStyledcomponents />, name: 'Styled Components' },
-      ],
-    },
-    {
-      title: 'Testing',
-      skills: [
-        { icon: <SiJest />, name: 'Jest' },
-        { icon: <SiSonarqube />, name: 'SonarQube' },
-      ],
-    },
-    {
-      title: 'Bundler & Deploy',
-      skills: [
-        { icon: <SiNextdotjs />, name: 'Next.js' },
-        { icon: <SiVite />, name: 'Vite' },
-        { icon: <FaNode />, name: 'Node.js' },
-        { icon: <SiWebpack />, name: 'Webpack' },
-        { icon: <SiDocker />, name: 'Docker' },
-      ],
+      title: 'Software Development',
+      description:
+        'Proficient in building scalable, responsive, and accessible interfaces using React.js, TypeScript, Next.js, Redux, Tailwind CSS, and modern CI/CD workflows with Vite, Docker, and SonarQube integration.',
     },
   ],
 };
 
-const Experience = () => {
+const ExperienceMobile = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -147,180 +115,151 @@ const Experience = () => {
         opacity: 1,
         transition: { delay: 0.3, duration: 0.4, ease: 'easeIn' },
       }}
-      className="min-h-[70vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-screen flex items-center justify-center py-10 px-3"
     >
-      <div className="container mx-auto px-4 md:px-6 xl:px-0 w-full">
+      <div className="w-full max-w-5xl">
         <Tabs defaultValue="about" className="w-full">
-          <TabsList className="w-full flex items-center justify-between gap-2 sm:gap-4 overflow-x-auto rounded-none bg-transparent p-0 border-b border-white/10">
-            <TabsTrigger
-              value="about"
-              className="relative px-3 sm:px-4 py-3 text-sm sm:text-base font-medium rounded-none data-[state=active]:text-accent data-[state=active]:border-b-2 data-[state=active]:border-accent"
-            >
-              About
-            </TabsTrigger>
-            <TabsTrigger
-              value="skills"
-              className="relative px-3 sm:px-4 py-3 text-sm sm:text-base font-medium rounded-none data-[state=active]:text-accent data-[state=active]:border-b-2 data-[state=active]:border-accent"
-            >
-              Skills
-            </TabsTrigger>
-            <TabsTrigger
-              value="career"
-              className="relative px-3 sm:px-4 py-3 text-sm sm:text-base font-medium rounded-none data-[state=active]:text-accent data-[state=active]:border-b-2 data-[state=active]:border-accent"
-            >
-              Career
-            </TabsTrigger>
-            <TabsTrigger
-              value="education"
-              className="relative px-3 sm:px-4 py-3 text-sm sm:text-base font-medium rounded-none data-[state=active]:text-accent data-[state=active]:border-b-2 data-[state=active]:border-accent"
-            >
-              Education
-            </TabsTrigger>
+          <TabsList className="flex justify-between overflow-x-auto border-b border-white/10 pb-1">
+            {['about', 'skills', 'career', 'education'].map((tab) => (
+              <TabsTrigger
+                key={tab}
+                value={tab}
+                className="text-sm font-medium px-3 py-2 data-[state=active]:text-accent data-[state=active]:border-b-2 data-[state=active]:border-accent"
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </TabsTrigger>
+            ))}
           </TabsList>
-          <div className="pt-6">
-            <TabsContent
-              value="about"
-              className="w-full text-center xl:text-left"
-            >
-              <div className="flex flex-col gap-6">
-                <h3 className="text-2xl sm:text-3xl font-bold">
-                  {about.title}
-                </h3>
-                <p className="max-w-lg text-white/60 mx-auto xl:mx-0 text-sm sm:text-base">
-                  {about.description}
-                </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto xl:mx-0">
-                  {about.info.map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-2 sm:gap-4"
-                    >
-                      <span className="text-white/60">{item.fieldName}</span>
-                      <span className="text-base sm:text-lg">
-                        {item.fieldValue}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TabsContent>
-            <TabsContent value="skills" className="w-full">
-              <div className="flex flex-col gap-6">
-                <div className="text-center xl:text-left">
-                  <h3 className="text-2xl sm:text-3xl font-bold">
-                    {skills.title}
-                  </h3>
-                </div>
-                <div className="flex flex-col gap-6">
-                  {skills.categories.map((category, i) => (
-                    <div key={i}>
-                      <h4 className="text-xl sm:text-2xl font-semibold mb-4">
-                        {category.title}
-                      </h4>
-                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <TabsContent value="about" className="mt-6">
+            <h3 className="text-2xl font-bold mb-4 text-center">
+              {about.title}
+            </h3>
+            <p className="text-white/70 text-sm text-center max-w-lg mx-auto leading-relaxed">
+              {about.description}
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 max-w-md mx-auto">
+              {about.info.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex flex-col items-center bg-[#232329] rounded-xl py-3 text-sm"
+                >
+                  <span className="text-white/50">{item.fieldName}</span>
+                  <span className="font-medium">{item.fieldValue}</span>
+                </li>
+              ))}
+            </ul>
+          </TabsContent>
+          <TabsContent value="skills" className="mt-6">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              {skills.title}
+            </h3>
+            <div className="flex flex-col gap-8">
+              {skills.categories.map((category, i) => (
+                <div key={i} className="mb-8">
+                  <h4 className="text-lg font-semibold mb-3 text-center text-accent">
+                    {category.title}
+                  </h4>
+
+                  {category.description ? (
+                    <p className="text-sm text-white/70 text-center max-w-md mx-auto leading-relaxed">
+                      {category.description}
+                    </p>
+                  ) : (
+                    <>
+                      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 bg-accent/5 p-3 rounded-2xl">
                         {category.skills.map((skill, index) => (
-                          <li key={index}>
-                            <TooltipProvider>
-                              <Tooltip>
-                                <TooltipTrigger className="w-full h-24 bg-[#232329] rounded-xl flex flex-col justify-center items-center group">
-                                  <div className="text-3xl sm:text-4xl group-hover:text-accent transition-all duration-200">
-                                    {skill.icon}
-                                  </div>
-                                  <p className="text-xs text-white/60 mt-2">
-                                    {skill.name}
-                                  </p>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                  <p>{skill.name}</p>
-                                </TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
-                          </li>
+                          <motion.li
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            className="flex flex-col items-center justify-center h-24 rounded-2xl bg-[#1f1f25] border border-white/5 text-center transition-all duration-200 hover:shadow-[0_0_10px_rgba(0,255,255,0.2)]"
+                          >
+                            <div className="text-2xl mb-2 text-accent">
+                              {skill.icon}
+                            </div>
+                            <p className="text-xs text-white/70 px-1 leading-snug">
+                              {skill.name}
+                            </p>
+                          </motion.li>
                         ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </TabsContent>
-            <TabsContent value="career" className="w-full">
-              <div className="flex flex-col gap-6 text-center xl:text-left">
-                <h3 className="text-2xl sm:text-3xl font-bold">
-                  {career.title}
-                </h3>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {career.items.map((item, index) => (
-                    <li key={index}>
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-[#232329] rounded-xl overflow-hidden hover:bg-[#2d2d34] transition-colors flex flex-col"
-                      >
-                        {item.image && (
-                          <div className="relative w-full h-32 sm:h-40">
-                            <Image
-                              src={item.image}
-                              alt={item.company}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 640px) 100vw, 50vw"
-                            />
-                          </div>
-                        )}
-                        <div className="p-4 flex flex-col gap-2 text-center lg:text-left">
-                          <span className="text-accent text-sm">
-                            {item.duration}
-                          </span>
-                          <h3 className="text-base sm:text-lg font-semibold">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center justify-center lg:justify-start gap-2">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TabsContent>
-            <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-6 text-center xl:text-left">
-                <h3 className="text-2xl sm:text-3xl font-bold">
-                  {education.title}
-                </h3>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {education.items.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={item.href || '#'}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-[#232329] h-44 py-6 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
+                        <motion.li
+                          whileHover={{ scale: 1.05 }}
+                          className="col-span-2 sm:col-span-3 flex flex-col items-center justify-center h-24 rounded-2xl bg-[#1f1f25] border border-accent/40 text-center shadow-[0_0_12px_rgba(0,255,255,0.15)]"
                         >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-sm sm:text-base text-center">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                          <div className="text-3xl mb-1 text-accent">
+                            {category.center.icon}
                           </div>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-          </div>
+                          <p className="text-sm text-white font-medium">
+                            {category.center.name}
+                          </p>
+                        </motion.li>
+                      </ul>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="career" className="mt-6">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              {career.title}
+            </h3>
+            <ul className="flex flex-col gap-5">
+              {career.items.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl overflow-hidden bg-[#232329] hover:bg-[#2b2b32] transition-colors"
+                >
+                  {item.image && (
+                    <div className="relative w-full h-32">
+                      <Image
+                        src={item.image}
+                        alt={item.company}
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4 text-center">
+                    <span className="text-accent text-sm">{item.duration}</span>
+                    <h4 className="font-semibold text-base">{item.position}</h4>
+                    <p className="text-white/60 text-sm">{item.company}</p>
+                  </div>
+                </a>
+              ))}
+            </ul>
+          </TabsContent>
+          <TabsContent value="education" className="mt-6">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              {education.title}
+            </h3>
+            <ScrollArea className="h-[400px] px-2">
+              <ul className="flex flex-col gap-5">
+                {education.items.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-xl bg-[#232329] hover:bg-[#2b2b32] transition-colors p-4 flex flex-col items-center text-center"
+                  >
+                    <span className="text-accent text-sm mb-1">
+                      {item.duration}
+                    </span>
+                    <h4 className="text-sm font-medium mb-1">{item.degree}</h4>
+                    <p className="text-white/60 text-xs">{item.institution}</p>
+                  </a>
+                ))}
+              </ul>
+            </ScrollArea>
+          </TabsContent>
         </Tabs>
       </div>
     </motion.div>
   );
 };
 
-export default Experience;
+export default ExperienceMobile;

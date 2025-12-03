@@ -1,4 +1,5 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -8,7 +9,7 @@ const projects = [
   {
     title: 'Manifest 404',
     description:
-      'A digital AI-powered punk rock band blending cyberpunk aesthetics with distorted guitars and the spirit of futuristic rebellion. I handle the design, code and music direction.',
+      'An experimental AI-powered punk rock collective that fuses music and visual storytelling. I lead the creative direction, user experience, development and product vision with the narrative.',
     tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Supabase'],
     link: 'https://manifest-404.vercel.app/',
     image: '/assets/projects/manifest404.png',
@@ -16,10 +17,10 @@ const projects = [
   {
     title: 'Bit Legends',
     description:
-      'A nostalgic retro-gaming hub powered by EmulatorJS, where players can relive 16-bit fighting classics, log in with Google to save favorites games. Play directly in the browser with keyboard or joystick.',
+      'A retro-gaming platform where players can relive 16-bit classics games directly in the browser. Designed and developed as a product experiment focused on nostalgia and social connection through a Netplay service.',
     tech: [
       'React',
-      'Typescript',
+      'TypeScript',
       'Tailwind CSS',
       'OAuth',
       'EmulatorJS',
@@ -31,8 +32,8 @@ const projects = [
   {
     title: 'Dark Walker',
     description:
-      'A refined dark theme for VSCode inspired by the elegance of a famous scotch whisky. Designed for developers who appreciate balance, contrast and accessibility.',
-    tech: ['VSCode', 'CSS', 'UI Design', 'Accessibility', 'Colorblind', 'Dark'],
+      'A custom VSCode theme designed to enhance focus and accessibility through refined contrast and visual balance. Developed as a design systems exploration into how to boost productivity for color-blind users like myself.',
+    tech: ['VSCode', 'CSS', 'UI Design', 'Accessibility', 'Color-Blind'],
     link: 'https://marketplace.visualstudio.com/items?itemName=Miltonr87.dark-walker',
     image: '/assets/projects/dark_walker.png',
   },
@@ -61,18 +62,13 @@ const SideProjects = () => {
           Side Projects
         </h3>
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          When I&apos;m not coding for clients, I dive into passion projects
-          where I explore creativity from my AI punk band called{' '}
-          <span className="font-semibold text-accent">Manifest 404</span>, to my
-          retro gaming platform{' '}
-          <span className="font-semibold text-accent">Bit Legends</span>, or
-          even my{' '}
-          <span className="font-semibold text-accent">
-            Dark Walker VSCode theme
-          </span>
-          .
+          Outside of product initiatives, I invest time in projects that allow
+          me to explore creativity, strategy and experimentation. These
+          initiatives continuously keep me up to date with emerging technologies
+          while expanding my perspective on innovation and product lifecycle.
         </p>
       </div>
+
       <div className="relative flex justify-center mb-12">
         <div className="flex bg-[#1b1b21]/80 border border-accent/30 backdrop-blur-md rounded-full p-1.5 shadow-md">
           {projects.map((p) => {
@@ -98,14 +94,13 @@ const SideProjects = () => {
                     }}
                   />
                 )}
-                <span className="relative z-20">
-                  <strong className="font-bold">{p.title}</strong>
-                </span>
+                <span className="relative z-20 font-bold">{p.title}</span>
               </motion.button>
             );
           })}
         </div>
       </div>
+
       <div className="relative w-full flex justify-center">
         <AnimatePresence mode="wait">
           <motion.div

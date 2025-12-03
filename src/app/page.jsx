@@ -10,21 +10,27 @@ export default function Home() {
       <div className="container mx-auto h-full px-4 md:px-6 xl:px-0">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none max-w-xl">
-            <span className="text-lg sm:text-xl">Software Engineer</span>
+            <span className="text-lg sm:text-xl">
+              Product Manager & Ownership
+            </span>
             <h1 className="h1 mb-6">
               Hello, I&apos;m
               <br />
               <span className="text-accent">Milton Rodrigues</span>
             </h1>
             <p className="max-w-[500px] text-white/80 mb-6 text-sm sm:text-base">
-              Self-driven Frontend Engineer with 5 years of experience
-              developing scalable web applications and SaaS platforms. Focused
-              on crafting efficient, maintainable code and creating delivering
-              solutions that combine performance, usability and design
-              excellence.
+              With over 5 years in the Tech Industry, I moved from frontend
+              developer into Product Management and Ownership. My technical
+              background enables me to communicate seamlessly with development
+              teams while leading products from concept to delivery with a clear
+              business vision and measurable impact.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-              <a href="https://resume.io/r/LIdaD2cGI" target="_blank">
+              <a
+                href="https://resume.io/r/LIdaD2cGI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   variant="outline"
                   size="lg"
@@ -42,6 +48,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="order-1 xl:order-none mb-8 xl:mb-0 w-full flex justify-center">
             <Photo />
           </div>
