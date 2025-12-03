@@ -12,8 +12,8 @@ const jetBrains_Mono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'Milton Rodrigues - Portfolio',
-  description: 'Software Engineer specialized in Frontend applications',
+  title: 'Milton Rodrigues',
+  description: 'Product Manager & Ownership',
 };
 
 export default function RootLayout({ children }) {
