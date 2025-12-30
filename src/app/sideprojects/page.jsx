@@ -6,12 +6,20 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Manifest 404',
+    title: 'Worldwide Collectibles',
     description:
-      'A digital AI-powered punk rock band blending cyberpunk aesthetics with distorted guitars and the spirit of futuristic rebellion. I handle the design, code and music direction.',
-    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Supabase'],
-    link: 'https://manifest-404.vercel.app/',
-    image: '/assets/projects/manifest404.png',
+      'An e-commerce platform for high-end collectible statues, featuring a sleek, responsive design and exclusive user experience. Built with ReactJS and Tailwind CSS, it integrates Shopify Storefront API for product management, Stripe for secure payments and Supabase for user authentication and data storage.',
+    tech: [
+      'React',
+      'Tailwind CSS',
+      'Zustand',
+      'Shopify Storefront API',
+      'Stripe',
+      'Framer Motion',
+      'Supabase',
+    ],
+    link: 'https://worldwide-collectibles.vercel.app/',
+    image: '/assets/projects/worldwide.png',
   },
   {
     title: 'Bit Legends',
@@ -61,16 +69,15 @@ const SideProjects = () => {
           Side Projects
         </h3>
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          When I&apos;m not coding for clients, I dive into passion projects
-          where I explore creativity from my AI punk band called{' '}
-          <span className="font-semibold text-accent">Manifest 404</span>, to my
-          retro gaming platform{' '}
-          <span className="font-semibold text-accent">Bit Legends</span>, or
-          even my{' '}
+          When I&apos;m not coding for clients, I focus on building and refining
+          product-driven experiences, from my retro gaming platform{' '}
+          <span className="font-semibold text-accent">Bit Legends</span>, to the
+          development of{' '}
           <span className="font-semibold text-accent">
-            Dark Walker VSCode theme
+            Worldwide Collectibles
           </span>
-          .
+          , a exclusive e-commerce platform for high-end collectible statues.
+          Each project reflects my passion for innovative tech.
         </p>
       </div>
       <div className="relative flex justify-center mb-12">
