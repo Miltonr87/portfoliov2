@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Worldwide Collectibles',
     description:
-      'An e-commerce platform of high-end collectible statues, built with ReactJS and Typescript, it integrates Shopify Storefront API for product management, Stripe for secure payments and Supabase for user authentication and data storage.',
+      'An e-commerce platform of premium collectible statues from world-renowned studios, it integrates Shopify Storefront API for product management, Stripe for secure payments and Supabase for user authentication and data storage.',
     tech: [
       'React',
       'Typescript',
