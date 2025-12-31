@@ -8,9 +8,10 @@ const projects = [
   {
     title: 'Worldwide Collectibles',
     description:
-      'An e-commerce platform for high-end collectible statues, featuring a sleek, responsive design and exclusive user experience. Built with ReactJS and Tailwind CSS, it integrates Shopify Storefront API for product management, Stripe for secure payments and Supabase for user authentication and data storage.',
+      'An e-commerce platform of high-end collectible statues, built with ReactJS and Typescript, it integrates Shopify Storefront API for product management, Stripe for secure payments and Supabase for user authentication and data storage.',
     tech: [
       'React',
+      'Typescript',
       'Tailwind CSS',
       'Zustand',
       'Shopify Storefront API',
@@ -70,14 +71,14 @@ const SideProjects = () => {
         </h3>
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
           When I&apos;m not coding for clients, I focus on building and refining
-          product-driven experiences, from my retro gaming platform{' '}
+          my own projects, from my retro gaming platform{' '}
           <span className="font-semibold text-accent">Bit Legends</span>, to the
           development of{' '}
           <span className="font-semibold text-accent">
             Worldwide Collectibles
           </span>
-          , a exclusive e-commerce platform for high-end collectible statues.
-          Each project reflects my passion for innovative tech.
+          , a exclusive e-commerce platform for collectors. Each project
+          reflects my passion for innovative tech.
         </p>
       </div>
       <div className="relative flex justify-center mb-12">
