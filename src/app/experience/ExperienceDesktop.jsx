@@ -17,7 +17,9 @@ import {
   SiSonarqube,
   SiDocker,
   SiWebpack,
+  SiSupabase,
 } from 'react-icons/si';
+import { GiBearFace } from 'react-icons/gi';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -57,6 +59,13 @@ const career = {
   title: 'Career',
   items: [
     {
+      company: 'Worldwide Collectibles',
+      position: 'Software Engineer | Founder',
+      duration: '2025 - 2026',
+      href: 'https://worldwidecollectibles.shop/',
+      image: '/assets/projects/worldwide.png',
+    },
+    {
       company: '7Things Network',
       position: 'Software Engineer',
       duration: '2025',
@@ -65,24 +74,17 @@ const career = {
     },
     {
       company: 'Close-Up International',
-      position: 'Frontend Developer',
+      position: 'Software Engineer',
       duration: '2022-2025',
       href: 'https://close-upinternational.com/',
       image: '/assets/work/closeup.png',
     },
     {
       company: 'Loja do Mecânico',
-      position: 'Frontend Developer',
+      position: 'Software Engineer',
       duration: '2021-2022',
       href: 'https://www.lojadomecanico.com.br/',
       image: '/assets/work/mecanico.png',
-    },
-    {
-      company: 'GlobeCoin',
-      position: 'Freelance Web Developer',
-      duration: '2020 - 2021',
-      href: 'https://globecoin-miltonr87.vercel.app/',
-      image: '/assets/work/portfolio1.png',
     },
   ],
 };
@@ -118,6 +120,8 @@ const skills = {
         { icon: <SiTypescript />, name: 'TypeScript' },
         { icon: <FaReact />, name: 'React.js' },
         { icon: <SiRedux />, name: 'Redux' },
+        { icon: <GiBearFace />, name: 'Zustand' },
+        { icon: <SiSupabase />, name: 'Supabase' },
       ],
     },
     {

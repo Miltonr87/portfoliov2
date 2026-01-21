@@ -19,7 +19,7 @@ const projects = [
       'Framer Motion',
       'Supabase',
     ],
-    link: 'https://worldwide-collectibles.vercel.app/',
+    link: 'https://worldwidecollectibles.shop/',
     image: '/assets/projects/worldwide.png',
   },
   {
