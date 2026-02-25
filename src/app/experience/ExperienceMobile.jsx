@@ -51,7 +51,7 @@ const career = {
       position: 'Software Engineer | Founder',
       duration: '2025 - 2026',
       href: 'https://worldwidecollectibles.shop/',
-      image: '/assets/projects/worldwide.png',
+      image: '/assets/work/worldwide.png',
     },
     {
       company: '7Things Network',
