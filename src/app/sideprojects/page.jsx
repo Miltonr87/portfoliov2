@@ -70,15 +70,14 @@ const SideProjects = () => {
           Side Projects
         </h3>
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          When I&apos;m not coding for clients, I focus on building and refining
-          my own projects, from my retro gaming platform{' '}
+          When I&apos;m not coding for clients, I focus on building my own
+          projects, from my retro gaming platform{' '}
           <span className="font-semibold text-accent">Bit Legends</span>, to the
           development of{' '}
           <span className="font-semibold text-accent">
             Worldwide Collectibles
           </span>
-          , a exclusive e-commerce platform for collectors. Each project
-          reflects my passion for innovative tech.
+          , a exclusive e-commerce platform for collectors.
         </p>
       </div>
       <div className="relative flex justify-center mb-12">
