@@ -59,18 +59,18 @@ const career = {
   title: 'Career',
   items: [
     {
-      company: 'Worldwide Collectibles',
-      position: 'Software Engineer | Founder',
-      duration: '2025 - 2026',
-      href: 'https://worldwidecollectibles.shop/',
-      image: '/assets/work/worldwide.png',
+      company: 'ITEC Alagoas',
+      position: 'Software Engineer',
+      duration: '2026',
+      href: 'https://www.itec.al.gov.br/',
+      image: '/assets/work/7things.png',
     },
     {
-      company: '7Things Network',
-      position: 'Software Engineer',
-      duration: '2025',
-      href: 'https://7things.com.br/',
-      image: '/assets/work/7things.png',
+      company: 'Worldwide Collectibles',
+      position: 'Software Engineer | Founder',
+      duration: '2026',
+      href: 'https://worldwidecollectibles.shop/',
+      image: '/assets/work/worldwide.png',
     },
     {
       company: 'Close-Up International',

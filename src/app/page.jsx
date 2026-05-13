@@ -17,7 +17,7 @@ export default function Home() {
               <span className="text-accent">Milton Rodrigues</span>
             </h1>
             <p className="max-w-[500px] text-white/80 mb-6 text-sm sm:text-base">
-              Self-driven Frontend Engineer with 5 years of experience
+              Self-driven Frontend Engineer with 6 years of experience
               developing scalable web applications and SaaS platforms. Focused
               on crafting efficient, maintainable code and creating delivering
               solutions that combine performance, usability and design
