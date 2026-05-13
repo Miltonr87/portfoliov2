@@ -51,7 +51,7 @@ const career = {
       position: 'Software Engineer',
       duration: '2026',
       href: 'https://www.itec.al.gov.br/',
-      image: '/assets/work/7things.png',
+      image: '/assets/work/itec.png',
     },
     {
       company: 'Worldwide Collectibles',
