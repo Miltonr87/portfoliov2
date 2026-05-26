@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 const stats = [
   { num: 4, text: 'Companies' },
-  { num: 5, text: 'Years of experience' },
+  { num: 6, text: 'Years of experience' },
   { num: 22, text: 'Technologies mastered' },
 ];
 

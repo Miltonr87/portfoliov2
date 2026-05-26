@@ -38,7 +38,7 @@ const about = {
   info: [
     { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
     { fieldName: 'Developer', fieldValue: 'Frontend' },
-    { fieldName: 'Experience', fieldValue: '5+ Years' },
+    { fieldName: 'Experience', fieldValue: '6 Years' },
     { fieldName: 'Nationality', fieldValue: '🇧🇷 Brazil' },
   ],
 };
