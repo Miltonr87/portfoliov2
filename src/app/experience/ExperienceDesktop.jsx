@@ -61,14 +61,14 @@ const career = {
     {
       company: 'ITEC Alagoas',
       position: 'Software Engineer',
-      duration: '2026',
+      duration: '2026-Now',
       href: 'https://www.itec.al.gov.br/',
       image: '/assets/work/itec.png',
     },
     {
       company: 'Worldwide Collectibles',
-      position: 'Software Engineer | Founder',
-      duration: '2026',
+      position: 'CTO & Founder',
+      duration: '2026-Now',
       href: 'https://worldwidecollectibles.shop/',
       image: '/assets/work/worldwide.png',
     },
