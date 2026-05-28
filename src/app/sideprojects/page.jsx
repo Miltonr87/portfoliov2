@@ -20,7 +20,7 @@ const projects = [
       'Supabase',
     ],
     link: 'https://worldwidecollectibles.shop/',
-    image: '/assets/projects/worldwide.png',
+    image: '/assets/projects/worldwidecollectibles.jpeg',
   },
   {
     title: 'Bit Legends',

@@ -70,7 +70,7 @@ const career = {
       position: 'CTO & Founder',
       duration: '2026-Now',
       href: 'https://worldwidecollectibles.shop/',
-      image: '/assets/work/worldwide.png',
+      image: '/assets/work/worldwidecollectibles.jpeg',
     },
     {
       company: 'Close-Up International',
