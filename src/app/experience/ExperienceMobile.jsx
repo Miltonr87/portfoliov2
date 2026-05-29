@@ -7,6 +7,9 @@ import {
   SiTypescript,
   SiRedux,
   SiJest,
+  SiCypress,
+  SiZod,
+  SiReacthookform,
   SiLucid,
   SiRadixui,
   SiFramer,
@@ -34,7 +37,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const about = {
   title: 'Experience',
   description:
-    'My core expertise is in ReactJS with JavaScript and TypeScript, building modern, responsive, and scalable user interfaces. I have strong experience with server-side rendering (SSR) using Next.js, as well as Client-Side Rendering (CSR) architectures. I consistently apply SOLID principles and unit testing to ensure clean, maintainable, and high-quality code.',
+    'Creative developer transitioning into full-stack development, with strong expertise in ReactJS, JavaScript and TypeScript. Experienced in building modern, responsive and scalable interfaces using Next or Vite with SSR, RSC and CSR architectures, always focused on clean and SOLID principles to ensure maintainable solutions.',
   info: [
     { fieldName: 'Name', fieldValue: 'Milton Rodrigues' },
     { fieldName: 'Developer', fieldValue: 'Frontend' },
@@ -58,7 +61,7 @@ const career = {
       position: 'CTO & Founder',
       duration: '2026-Now',
       href: 'https://worldwidecollectibles.shop/',
-      image: '/assets/work/worldwidecollectibles.jpeg',
+      image: '/assets/work/worldwide.png',
     },
     {
       company: 'Close-Up International',
@@ -106,9 +109,11 @@ const skills = {
         { icon: <FaJs />, name: 'JavaScript' },
         { icon: <SiTypescript />, name: 'TypeScript' },
         { icon: <FaReact />, name: 'React.js' },
+        { icon: <SiReacthookform />, name: 'React Hook Form' },
         { icon: <SiRedux />, name: 'Redux' },
-        { icon: <GiBearFace />, name: 'Zustand' },
         { icon: <SiSupabase />, name: 'Supabase' },
+        { icon: <SiZod />, name: 'Zod' },
+        { icon: <GiBearFace />, name: 'Zustand' },
       ],
     },
     {
@@ -127,6 +132,7 @@ const skills = {
       title: 'Testing',
       skills: [
         { icon: <SiJest />, name: 'Jest' },
+        { icon: <SiCypress />, name: 'Cypress' },
         { icon: <SiSonarqube />, name: 'SonarQube' },
       ],
     },
