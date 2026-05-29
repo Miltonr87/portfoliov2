@@ -255,13 +255,13 @@ const Experience = () => {
                           className="bg-[#232329] rounded-xl overflow-hidden hover:bg-[#2d2d34] transition-colors flex flex-col"
                         >
                           {item.image && (
-                            <div className="relative w-full h-[180px] bg-white/5 flex items-center justify-center">
+                            <div className="w-full h-[160px] bg-white/5 flex items-center justify-center">
                               <Image
                                 src={item.image}
                                 alt={item.institution}
-                                fill
-                                className="object-contain p-4"
-                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                width={140}
+                                height={140}
+                                className="object-contain max-h-[130px] w-auto"
                               />
                             </div>
                           )}
