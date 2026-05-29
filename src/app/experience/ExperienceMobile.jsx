@@ -25,7 +25,6 @@ import {
 import { GiBearFace } from 'react-icons/gi';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import {
   Tooltip,
   TooltipContent,
@@ -88,12 +87,14 @@ const education = {
       degree: 'Software Engineer',
       duration: '2020–2021',
       href: 'https://cursos.alura.com.br/user/miltonrodrigues713',
+      image: '/assets/work/alura.png',
     },
     {
       institution: 'Federal University of Alagoas',
       degree: 'Journalism',
       duration: '2005–2009',
       href: 'https://ufal.br/',
+      image: '/assets/work/ufal.jpeg',
     },
   ],
 };
@@ -301,29 +302,44 @@ const Experience = () => {
                 <h3 className="text-2xl sm:text-3xl font-bold">
                   {education.title}
                 </h3>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {education.items.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href={item.href || '#'}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-[#232329] h-44 py-6 px-4 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:bg-[#2d2d34] transition-colors"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-sm sm:text-base text-center">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {education.items.map((item, index) => (
+                    <li key={index}>
+                      <a
+                        href={item.href || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#232329] rounded-xl overflow-hidden hover:bg-[#2d2d34] transition-colors flex flex-col"
+                      >
+                        {item.image && (
+                          <div className="relative w-full h-24 sm:h-28 bg-white/5 flex items-center justify-center">
+                            <Image
+                              src={item.image}
+                              alt={item.institution}
+                              fill
+                              className="object-contain p-3"
+                              sizes="(max-width: 640px) 100vw, 50vw"
+                            />
+                          </div>
+                        )}
+                        <div className="p-4 flex flex-col gap-2 text-center lg:text-left">
+                          <span className="text-accent text-sm">
+                            {item.duration}
+                          </span>
+                          <h3 className="text-sm sm:text-base font-semibold">
                             {item.degree}
                           </h3>
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center justify-center lg:justify-start gap-2">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-white/60 text-xs sm:text-sm">
+                              {item.institution}
+                            </p>
                           </div>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </TabsContent>
           </div>
