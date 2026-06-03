@@ -37,6 +37,15 @@ const projects = [
     link: 'https://bitlegends.vercel.app/',
     image: '/assets/projects/bitlegends.png',
   },
+
+  {
+    title: 'Manifest 404',
+    description:
+      'A digital AI-powered punk rock band blending cyberpunk aesthetics with distorted guitars and the spirit of futuristic rebellion. I handle the design, code and music direction.',
+    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Supabase'],
+    link: 'https://manifest-404.vercel.app/',
+    image: '/assets/projects/manifest404.png',
+  },
   {
     title: 'Dark Walker',
     description:
@@ -44,14 +53,6 @@ const projects = [
     tech: ['VSCode', 'CSS', 'UI Design', 'Accessibility', 'Colorblind', 'Dark'],
     link: 'https://marketplace.visualstudio.com/items?itemName=Miltonr87.dark-walker',
     image: '/assets/projects/dark_walker.png',
-  },
-  {
-    title: 'Manifest 404',
-    description:
-      'A creative error page concept that transforms the mundane 404 experience into an engaging visual journey. Built with modern web technologies, it features smooth animations and playful interactions to turn frustration into delight.',
-    tech: ['React', 'Next.js', 'Framer Motion', 'Tailwind CSS', 'Creative UI'],
-    link: '#',
-    image: '/assets/projects/manifest404.png',
   },
 ];
 
