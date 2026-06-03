@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Manifest 404',
     description:
-      'A digital AI-powered punk rock band blending cyberpunk aesthetics with distorted guitars and the spirit of futuristic rebellion. I handle the design, code and music direction.',
+      'Manifest 404 is an experimental digital punk rock project that merges the raw intensity of hardcore riffs with the aesthetics of cyberpunk culture. Its songs explore themes of control, rebellion, addiction, and liberation in a hyper-connected world.',
     tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Supabase'],
     link: 'https://manifest-404.vercel.app/',
     image: '/assets/projects/manifest404.png',
